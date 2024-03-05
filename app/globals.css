@@ -73,4 +73,7 @@
   body {
     @apply bg-background text-foreground;
   }
+  .primary-grdient {
+    @apply bg-gradient-to-r from-primary to-[#1B4AEF];
+  }
 }

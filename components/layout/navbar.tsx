@@ -73,7 +73,7 @@ const Navbar = React.forwardRef<HTMLDivElement, NavbarProps>(
             ))}
 
             <NavigationMenuItem>
-              <Button className="px-6 h-9 my-2 rounded-lg font-bold text-sm">
+              <Button className="px-6 h-9 my-2 rounded-lg font-bold text-sm primary-grdient">
                 <NavigationMenuLink>Get Started</NavigationMenuLink>
               </Button>
             </NavigationMenuItem>
