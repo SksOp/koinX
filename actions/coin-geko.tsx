@@ -1,6 +1,6 @@
 "use server";
 
-import { SimplePriceINRandUSD, Trendings } from "@/types/gecko";
+import { CoinData, SimplePriceINRandUSD, Trendings } from "@/types/gecko";
 
 const baseUrl = "https://api.coingecko.com/api/v3";
 /**
@@ -21,9 +21,7 @@ export async function searchTranding() {
  *
  * @export
  * @param {string} id A single currncy name
- * @returns {Promise<SimplePriceINRandUSD | null>} A promise that resolves to the price data in INR and USD
- *                                                 if the query is successful and the currency is found.
- *                                                 Returns null if the currency is not found or the identifier is invalid.
+ * @returns {Promise<SimplePriceINRandUSD >} A promise that resolves to the price data in INR and USD
  * @throws {Error} If the input `id` contains a comma  or if there is a failure in fetching data from the external API.
  */
 export async function getSingleSimplePrice(id: string) {
@@ -32,13 +30,24 @@ export async function getSingleSimplePrice(id: string) {
     throw new Error("This function just fetch one at a time");
 
   const res = await fetch(
-    `${baseUrl}/simple/price?ids=${id}&vs_currencies=${vs_currencies}`
+    `${baseUrl}/simple/price?ids=${id}&vs_currencies=${vs_currencies}&include_24hr_change=true`
   );
   if (!res.ok) throw new Error("Unable to fetch the coin details");
   const data = (await res.json()) as SimplePriceINRandUSD;
-  if (!data[id]) {
-    // coin geko simply return empty object for unknown values
-    return null;
-  }
+
   return data;
+}
+/**
+ *
+ *
+ * @export
+ * @param {string} id The id of the coin
+ * @return {CoinData} Contains Market information of the coina and simple details like logo
+ */
+export async function getCoinData(id: string) {
+  const res = await fetch(
+    `${baseUrl}/coins/${id}?localization=en&tickers=false&market_data=true&community_data=false&developer_data=true&sparkline=false`
+  );
+  if (!res.ok) throw new Error("Unable to fetch the coin details");
+  return (await res.json()) as CoinData;
 }

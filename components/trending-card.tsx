@@ -8,7 +8,7 @@ interface TrendingCardProps extends React.HTMLProps<HTMLDivElement> {
 }
 const TrendingCard: React.FC<TrendingCardProps> = ({ trendings, ...props }) => {
   return (
-    <Card className="border-none" {...props}>
+    <Card className="border-none rounded-2xl" {...props}>
       <CardHeader>Trending Coins (24h)</CardHeader>
       <CardContent className="gap-4 flex flex-col">
         {trendings.coins.splice(0, 3).map((coin) => (
