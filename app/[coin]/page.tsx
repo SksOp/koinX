@@ -10,6 +10,7 @@ import ArrowDouble from "@/components/icons/arrow-double";
 import Sentiment from "@/components/sentiment";
 import TableCard from "@/components/table-card";
 import TeamTab from "@/components/team-tab";
+import TrendingViewFooter from "@/components/trending-view-footer";
 import React from "react";
 
 async function page({ params }: { params: { coin: string } }) {
@@ -17,22 +18,25 @@ async function page({ params }: { params: { coin: string } }) {
   const coin = await getCoinData(params.coin);
   return (
     <>
-      <div className="flex justify-start px-4 pt-4  md:pt-8 items-center text-lg">
-        <CoinPath coin={params.coin} />
-      </div>
-      <div className="md:grid md:grid-cols-7 p-3 gap-6">
-        <div className="md:col-span-5">
-          <TableCard coin={coin} />
-          <DetailsTab coin={coin} />
-          <Sentiment />
-          <AboutTab coin={coin} />
-          <TeamTab />
+      <div className="lg:px-16 ">
+        <div className="flex justify-start px-4 pt-4  md:pt-8 items-center text-lg">
+          <CoinPath coin={params.coin} />
         </div>
+        <div className="md:grid md:grid-cols-7 p-3 gap-6">
+          <div className="md:col-span-5">
+            <TableCard coin={coin} />
+            <DetailsTab coin={coin} />
+            <Sentiment />
+            <AboutTab coin={coin} />
+            <TeamTab trendings={trendings} />
+          </div>
 
-        <div className="mt-4 md:mt-0 md:block col-span-2">
-          <AdSection trendings={trendings} />
+          <div className="mt-4 md:mt-0 md:block col-span-2">
+            <AdSection trendings={trendings} />
+          </div>
         </div>
       </div>
+      <TrendingViewFooter className="hidden md:block" trendings={trendings} />
     </>
   );
 }

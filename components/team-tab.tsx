@@ -1,7 +1,11 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "./ui/card";
+import TrendingViewFooter from "./trending-view-footer";
+import { Trendings } from "@/types/gecko";
 
-const TeamTab: React.FC<{}> = ({ ...props }) => {
+const TeamTab: React.FC<{
+  trendings: Trendings;
+}> = ({ trendings, ...props }) => {
   return (
     <Card className="mt-8 " {...props}>
       <CardHeader>
@@ -53,6 +57,10 @@ const TeamTab: React.FC<{}> = ({ ...props }) => {
           dignissimos, eligendi rerum, deleniti quisquam perferendis quam
           reprehenderit nobis voluptas ad cumque neque.
         </TeamCardItem>
+        <TrendingViewFooter
+          className="md:hidden block p-0"
+          trendings={trendings}
+        />
       </CardContent>
     </Card>
   );

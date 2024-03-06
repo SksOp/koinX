@@ -20,6 +20,7 @@ export interface Data {
     inr: number;
     usd: number;
   };
+  price: string;
   sparkline: string;
 }
 
