@@ -22,11 +22,12 @@ const TrendingViewFooter: React.FC<Props> = ({
   ...rest
 }) => {
   const { coins } = trendings;
+  const reversedCoins = coins.map((_, i) => coins[coins.length - 1 - i]);
   return (
     <div className={cn("w-full p-8 bg-card flex flex-col gap-6", className)}>
       <p className="text-xl font-bold mb-4 md:mb-8 "> You May Also Like</p>
       <TrendingCarosel coins={coins} />
-      <TrendingCarosel coins={coins.toReversed()} />
+      <TrendingCarosel coins={reversedCoins} />
     </div>
   );
 };
