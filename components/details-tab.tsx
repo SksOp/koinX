@@ -152,7 +152,7 @@ const PerformanceMeter: React.FC<{
       </div>
       <div className="flex-grow relative h-1 bg-gradient-to-r from-red-400 to-green-400 rounded-full">
         {/* add a triangle to point to that percent */}
-        <div className={cn("absolute top-2 ", `left-[${percent}%]`)}>
+        <div className={cn("absolute top-2 ")} style={{ left: `${percent}%` }}>
           <Triangle className={cn("w-3 h-2 aspect-[1/5] text-black")} />
         </div>
       </div>
