@@ -55,7 +55,7 @@ interface NavbarProps extends React.HTMLAttributes<HTMLDivElement> {}
 const Navbar = React.forwardRef<HTMLDivElement, NavbarProps>(
   ({ ...props }, ref) => {
     return (
-      <nav className="w-full bg-card flex justify-between items-center z-10 px-10 py-5  shadow-md">
+      <nav className="w-full bg-card flex justify-between items-center z-10 px-16 py-5  shadow-md">
         <a href="/">
           <Logo />
         </a>
@@ -65,7 +65,7 @@ const Navbar = React.forwardRef<HTMLDivElement, NavbarProps>(
               <NavigationMenuItem key={item.name}>
                 <NavigationMenuLink
                   href={item.href}
-                  className="font-bold text-sm"
+                  className="font-bold text-lg"
                 >
                   {item.name}
                 </NavigationMenuLink>
@@ -73,7 +73,7 @@ const Navbar = React.forwardRef<HTMLDivElement, NavbarProps>(
             ))}
 
             <NavigationMenuItem>
-              <Button className="px-6 h-9 my-2 rounded-lg font-bold text-sm primary-grdient">
+              <Button className="px-8 h-11 my-2 font-bold rounded-lg  text-lg primary-grdient">
                 <NavigationMenuLink>Get Started</NavigationMenuLink>
               </Button>
             </NavigationMenuItem>

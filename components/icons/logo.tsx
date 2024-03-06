@@ -13,10 +13,10 @@ const Logo = React.forwardRef<SVGSVGElement, LogoProps>(({ ...props }, ref) => {
       {...props}
       ref={ref}
     >
-      <g clip-path="url(#clip0_1_1123)">
+      <g clipPath="url(#clip0_1_1123)">
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M37.6804 7.00981L36.877 6.4073L37.2258 6.038C37.2027 5.4445 37.4755 4.738 37.9953 4.15217C38.5651 3.50984 39.3146 3.14505 39.9454 3.15845L40.2912 2.79224L40.8938 3.59558L40.8829 3.6071C41.35 4.22718 41.1642 5.34498 40.3611 6.25051C39.5097 7.20965 38.3396 7.50878 37.6833 7.00674L37.6804 7.00981Z"
           fill="url(#paint0_linear_1_1123)"
         />
@@ -82,11 +82,11 @@ const Logo = React.forwardRef<SVGSVGElement, LogoProps>(({ ...props }, ref) => {
           y2="7.3111"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#3372F5" />
-          <stop offset="0.249995" stop-color="#3372F5" />
-          <stop offset="0.505208" stop-color="#80DBFB" />
-          <stop offset="0.838547" stop-color="#3372F5" />
-          <stop offset="1" stop-color="#3372F5" />
+          <stop stopColor="#3372F5" />
+          <stop offset="0.249995" stopColor="#3372F5" />
+          <stop offset="0.505208" stopColor="#80DBFB" />
+          <stop offset="0.838547" stopColor="#3372F5" />
+          <stop offset="1" stopColor="#3372F5" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_1_1123"
@@ -96,10 +96,10 @@ const Logo = React.forwardRef<SVGSVGElement, LogoProps>(({ ...props }, ref) => {
           y2="4.69194"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#0080D4" />
-          <stop offset="0.47" stop-color="white" />
-          <stop offset="0.6" stop-color="#F1F8FC" />
-          <stop offset="1" stop-color="#007DCC" />
+          <stop stopColor="#0080D4" />
+          <stop offset="0.47" stopColor="white" />
+          <stop offset="0.6" stopColor="#F1F8FC" />
+          <stop offset="1" stopColor="#007DCC" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_1_1123"
@@ -109,8 +109,8 @@ const Logo = React.forwardRef<SVGSVGElement, LogoProps>(({ ...props }, ref) => {
           y2="16.8402"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFAC00" />
-          <stop offset="1" stop-color="#FE7801" />
+          <stop stopColor="#FFAC00" />
+          <stop offset="1" stopColor="#FE7801" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_1_1123"
@@ -120,8 +120,8 @@ const Logo = React.forwardRef<SVGSVGElement, LogoProps>(({ ...props }, ref) => {
           y2="12.3704"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFCE00" />
-          <stop offset="1" stop-color="#FFB003" />
+          <stop stopColor="#FFCE00" />
+          <stop offset="1" stopColor="#FFB003" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_1_1123"
@@ -131,8 +131,8 @@ const Logo = React.forwardRef<SVGSVGElement, LogoProps>(({ ...props }, ref) => {
           y2="20.2329"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FE8B01" />
-          <stop offset="1" stop-color="#FE7801" />
+          <stop stopColor="#FE8B01" />
+          <stop offset="1" stopColor="#FE7801" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_1_1123"
@@ -142,8 +142,8 @@ const Logo = React.forwardRef<SVGSVGElement, LogoProps>(({ ...props }, ref) => {
           y2="4.58752"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFCE00" />
-          <stop offset="1" stop-color="#FFC101" />
+          <stop stopColor="#FFCE00" />
+          <stop offset="1" stopColor="#FFC101" />
         </linearGradient>
         <clipPath id="clip0_1_1123">
           <rect

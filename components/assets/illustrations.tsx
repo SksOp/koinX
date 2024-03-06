@@ -14,7 +14,7 @@ export const HeroIllustration = React.forwardRef<
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_1_981)">
+      <g clipPath="url(#clip0_1_981)">
         <path
           d="M26.833 153.729C61.721 170.384 118.283 170.389 153.171 153.729C188.059 137.068 188.054 110.067 153.171 93.4114C118.288 76.7561 61.721 76.7561 26.833 93.4114C-8.05487 110.067 -8.04981 137.073 26.833 153.729Z"
           fill="#1F67FF"
@@ -255,22 +255,22 @@ export const HeroIllustration = React.forwardRef<
           d="M128.39 22.1953C128.39 21.3534 127.803 21.0136 127.074 21.4345L122.218 24.2391L86.5205 44.8909C86.1371 45.1405 85.8179 45.4773 85.5892 45.8739C85.3604 46.2706 85.2285 46.7157 85.2042 47.1732V122.629C85.2042 123.471 85.7914 123.811 86.5205 123.39L122.234 102.733L127.074 99.9336C127.457 99.684 127.776 99.3472 128.005 98.9506C128.234 98.5539 128.366 98.1088 128.39 97.6513V22.1953Z"
           fill="white"
           stroke="#27DEBF"
-          stroke-width="0.565386"
-          stroke-miterlimit="10"
+          strokeWidth="0.565386"
+          strokeMiterlimit="10"
         />
         <path
           d="M85.9521 123.827C85.7732 123.829 85.5974 123.78 85.4458 123.685C85.2733 123.567 85.1354 123.405 85.0464 123.216C84.9574 123.027 84.9205 122.818 84.9395 122.609V47.1736C84.9627 46.6716 85.1058 46.1824 85.3569 45.7473C85.608 45.3123 85.9597 44.9439 86.3824 44.6733L122.08 24.0215L122.334 24.4627L86.6356 45.1094C86.2913 45.3378 86.0047 45.6431 85.7983 46.0013C85.5918 46.3595 85.4712 46.7608 85.4458 47.1736V122.63C85.4108 122.75 85.4169 122.878 85.4633 122.994C85.5096 123.11 85.5935 123.207 85.7015 123.269C85.8094 123.332 85.9352 123.356 86.0587 123.339C86.1821 123.321 86.2961 123.263 86.3824 123.172L122.096 102.515L122.349 102.957L86.6356 123.614C86.4289 123.74 86.194 123.814 85.9521 123.827Z"
           fill="#0C7CEC"
           stroke="#0C7CEC"
-          stroke-width="0.565386"
-          stroke-miterlimit="10"
+          strokeWidth="0.565386"
+          strokeMiterlimit="10"
         />
         <path
           d="M122.359 102.955L122.106 102.513L126.946 99.7139C127.29 99.4855 127.577 99.1802 127.783 98.822C127.99 98.4638 128.111 98.0625 128.136 97.6497V22.1936C128.171 22.0737 128.165 21.9455 128.118 21.8295C128.072 21.7136 127.988 21.6165 127.88 21.554C127.772 21.4914 127.646 21.467 127.523 21.4846C127.4 21.5022 127.286 21.5608 127.199 21.651L122.344 24.4607L122.091 24.0194L126.961 21.2351C127.126 21.1011 127.327 21.0203 127.539 21.0033C127.75 20.9864 127.962 21.0341 128.145 21.1402C128.329 21.2462 128.476 21.4056 128.568 21.5974C128.659 21.7891 128.691 22.0041 128.657 22.2139V97.6497C128.634 98.1523 128.49 98.642 128.239 99.0779C127.988 99.5137 127.637 99.883 127.214 100.155L122.359 102.955Z"
           fill="#27DEBF"
           stroke="#0C7CEC"
-          stroke-width="0.565386"
-          stroke-miterlimit="10"
+          strokeWidth="0.565386"
+          strokeMiterlimit="10"
         />
         <path
           opacity="0.5"
@@ -430,9 +430,9 @@ export const HeroIllustration = React.forwardRef<
           y2="127.65"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#02CDFF" />
-          <stop offset="0.494791" stop-color="#03C0FF" />
-          <stop offset="1" stop-color="#005AFD" />
+          <stop stopColor="#02CDFF" />
+          <stop offset="0.494791" stopColor="#03C0FF" />
+          <stop offset="1" stopColor="#005AFD" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_1_981"
@@ -442,8 +442,8 @@ export const HeroIllustration = React.forwardRef<
           y2="128.693"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFCE00" />
-          <stop offset="1" stop-color="#FFB003" />
+          <stop stopColor="#FFCE00" />
+          <stop offset="1" stopColor="#FFB003" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_1_981"
@@ -453,8 +453,8 @@ export const HeroIllustration = React.forwardRef<
           y2="97.9985"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFCE00" />
-          <stop offset="1" stop-color="#FFB003" />
+          <stop stopColor="#FFCE00" />
+          <stop offset="1" stopColor="#FFB003" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_1_981"
@@ -464,9 +464,9 @@ export const HeroIllustration = React.forwardRef<
           y2="88.5795"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#02CDFF" />
-          <stop offset="0.494791" stop-color="#03C0FF" />
-          <stop offset="1" stop-color="#005AFD" />
+          <stop stopColor="#02CDFF" />
+          <stop offset="0.494791" stopColor="#03C0FF" />
+          <stop offset="1" stopColor="#005AFD" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_1_981"
@@ -476,8 +476,8 @@ export const HeroIllustration = React.forwardRef<
           y2="108.563"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFCE00" />
-          <stop offset="1" stop-color="#FFB003" />
+          <stop stopColor="#FFCE00" />
+          <stop offset="1" stopColor="#FFB003" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_1_981"
@@ -487,8 +487,8 @@ export const HeroIllustration = React.forwardRef<
           y2="52.0313"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFAC00" />
-          <stop offset="1" stop-color="#FE7801" />
+          <stop stopColor="#FFAC00" />
+          <stop offset="1" stopColor="#FE7801" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_1_981"
@@ -498,8 +498,8 @@ export const HeroIllustration = React.forwardRef<
           y2="51.5236"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFCE00" />
-          <stop offset="1" stop-color="#FFB003" />
+          <stop stopColor="#FFCE00" />
+          <stop offset="1" stopColor="#FFB003" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_1_981"
@@ -509,8 +509,8 @@ export const HeroIllustration = React.forwardRef<
           y2="52.4918"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FE8B01" />
-          <stop offset="1" stop-color="#FE7801" />
+          <stop stopColor="#FE8B01" />
+          <stop offset="1" stopColor="#FE7801" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_1_981"
@@ -520,8 +520,8 @@ export const HeroIllustration = React.forwardRef<
           y2="47.5896"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFCE00" />
-          <stop offset="1" stop-color="#FFC101" />
+          <stop stopColor="#FFCE00" />
+          <stop offset="1" stopColor="#FFC101" />
         </linearGradient>
         <clipPath id="clip0_1_981">
           <rect

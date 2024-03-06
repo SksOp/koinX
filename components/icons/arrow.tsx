@@ -17,16 +17,16 @@ const Arrow = React.forwardRef<SVGSVGElement, ArrowProps>(
         <path
           d="M16.9583 9.9952H4.45834"
           stroke="#0F1629"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M11.9168 4.97479L16.9585 9.99479L11.9168 15.0156"
           stroke="#0F1629"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     );
