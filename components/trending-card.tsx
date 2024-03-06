@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader } from "./ui/card";
 import Image from "next/image";
 import PercentViewer from "./percent-viewer";
 import { Separator } from "./ui/separator";
+import Link from "next/link";
 interface TrendingCardProps extends React.HTMLProps<HTMLDivElement> {
   trendings: Trendings;
 }
@@ -13,9 +14,10 @@ const TrendingCard: React.FC<TrendingCardProps> = ({ trendings, ...props }) => {
       <CardHeader>Trending Coins (24h)</CardHeader>
       <CardContent className="gap-4 flex flex-col">
         {trendings.coins.splice(0, 3).map((coin) => (
-          <div
+          <Link
+            href={`/${coin.item.id}`}
             key={coin.item.id}
-            className="flex lg:items-center lg:gap-4 md:gap-1 md:flex-col lg:flex-row md:items-start "
+            className="flex lg:items-center lg:gap-4 md:gap-1 md:flex-col lg:flex-row md:items-start cursor-pointer"
           >
             <div className="flex items-center gap-4">
               <Image
@@ -36,7 +38,7 @@ const TrendingCard: React.FC<TrendingCardProps> = ({ trendings, ...props }) => {
               percent={coin.item.data.price_change_percentage_24h.inr}
             />
             <Separator className="hidden md:block lg:hidden mt-3" />
-          </div>
+          </Link>
         ))}
       </CardContent>
     </Card>

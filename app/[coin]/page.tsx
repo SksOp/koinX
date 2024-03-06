@@ -27,7 +27,7 @@ async function page({ params }: { params: { coin: string } }) {
           <AboutTab coin={coin} />
         </div>
 
-        <div className="hidden md:block col-span-2">
+        <div className="mt-4 md:mt-0 md:block col-span-2">
           <AdSection trendings={trendings} />
         </div>
       </div>
