@@ -23,7 +23,8 @@ const ActionCards: React.FC<ActionCards> = ({ ...props }) => {
       </CardContent>
       <CardFooter>
         <Button variant="secondary" className="bg-card text-foreground m-auto">
-          Get Started <span className=" md:hidden lg:block"> for FREE</span>
+          <span className="mr-1 ">Get Started </span>
+          <span className=" md:hidden lg:block"> for FREE</span>
           <Arrow className="w-4 h-4" />
         </Button>
       </CardFooter>
