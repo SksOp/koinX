@@ -18,7 +18,7 @@ const TableCard: React.FC<TableCardProps> = ({ coin, ...props }) => {
         className="flex flex-col bg-card min-h-[60vh] rounded-2xl "
         {...props}
       >
-        <CardHeader className="flex flex-col gap-8 mb-4">
+        <CardHeader className="flex flex-col gap-2 md:gap-8 mb-4">
           <Header
             img={coin.image.large}
             name={coin.name}
@@ -80,13 +80,15 @@ const CoinEvaluation: React.FC<CoinEvaluationProps> = (data) => {
   const { usd, inr, change_24h } = data;
   return (
     <div className="flex flex-col gap-3">
-      <div className="flex items-center gap-4">
+      <div className="flex md:items-center gap-2 md:gap-4 flex-col-reverse md:flex-row items-start">
         <p className="text-md text-4xl font-semibold">
           ${numberToIndianString(usd)}
         </p>
-        <div className="w-5" />
-        <PercentViewer percent={change_24h} />
-        <p className="opacity-40 font-semibold">(24H)</p>
+        <div className="w-2" />
+        <div className="flex items center gap-4">
+          <PercentViewer percent={change_24h} />
+          <p className="opacity-40 font-semibold">(24H)</p>
+        </div>
       </div>
       <p>₹ {numberToIndianString(inr)}</p>
     </div>

@@ -5,5 +5,5 @@ export default function Layout({
   children: React.ReactNode;
   params: { coin: string };
 }>) {
-  return <div className="md:px-16">{children}</div>;
+  return <div className="lg:px-16 ">{children}</div>;
 }

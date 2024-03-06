@@ -16,7 +16,7 @@ async function page({ params }: { params: { coin: string } }) {
   const coin = await getCoinData(params.coin);
   return (
     <>
-      <div className="flex justify-start px-4  pt-8 items-center text-lg">
+      <div className="flex justify-start px-4 pt-4  md:pt-8 items-center text-lg">
         <CoinPath coin={params.coin} />
       </div>
       <div className="md:grid md:grid-cols-7 p-3 gap-6">

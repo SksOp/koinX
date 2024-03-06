@@ -10,11 +10,11 @@ const ActionCards: React.FC<ActionCards> = ({ ...props }) => {
   return (
     <Card className="bg-[#0052FE] rounded-2xl" {...props}>
       <CardHeader>
-        <p className="text-2xl font-bold text-center text-card leading-[170%]">
+        <p className="text-2xl font-bold text-center text-card lg:leading-[170%] leading-6">
           Get Started with KoinX for FREE
         </p>
       </CardHeader>
-      <CardContent className="items-center flex flex-col gap-8">
+      <CardContent className="items-center flex flex-col gap-8 overflow-hidden">
         <p className="text-sm text-center text-card  leading-[170%]">
           With our range of features that you can equip for free, KoinX allows
           you to be more educated and aware of your tax reports.
@@ -23,7 +23,7 @@ const ActionCards: React.FC<ActionCards> = ({ ...props }) => {
       </CardContent>
       <CardFooter>
         <Button variant="secondary" className="bg-card text-foreground m-auto">
-          Get Started for FREE
+          Get Started <span className=" md:hidden lg:block"> for FREE</span>
           <Arrow className="w-4 h-4" />
         </Button>
       </CardFooter>
