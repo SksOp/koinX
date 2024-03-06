@@ -13,7 +13,7 @@ const AboutTab: React.FC<Props> = ({ coin, ...props }) => {
   const actionCardOne = (
     <div className="flex gap-8 items-center bg-primary rounded-lg p-4  md:flex-grow  bg-gradient-to-br from-[#79F1A4] to-[#0E5CAD]  ">
       <Image
-        src="/images/a.png"
+        src="/images/b.png"
         width={300}
         height={300}
         className=" w-32 h-32 md:w-40 md:h-40"

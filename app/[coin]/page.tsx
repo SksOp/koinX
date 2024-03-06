@@ -9,6 +9,7 @@ import DetailsTab from "@/components/details-tab";
 import ArrowDouble from "@/components/icons/arrow-double";
 import Sentiment from "@/components/sentiment";
 import TableCard from "@/components/table-card";
+import TeamTab from "@/components/team-tab";
 import React from "react";
 
 async function page({ params }: { params: { coin: string } }) {
@@ -25,6 +26,7 @@ async function page({ params }: { params: { coin: string } }) {
           <DetailsTab coin={coin} />
           <Sentiment />
           <AboutTab coin={coin} />
+          <TeamTab />
         </div>
 
         <div className="mt-4 md:mt-0 md:block col-span-2">
