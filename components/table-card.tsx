@@ -14,7 +14,10 @@ interface TableCardProps extends React.HTMLProps<HTMLDivElement> {
 const TableCard: React.FC<TableCardProps> = ({ coin, ...props }) => {
   return (
     <>
-      <div className="flex flex-col bg-card min-h-[60vh] rounded-2xl ">
+      <div
+        className="flex flex-col bg-card min-h-[60vh] rounded-2xl "
+        {...props}
+      >
         <CardHeader className="flex flex-col gap-8 mb-4">
           <Header
             img={coin.image.large}

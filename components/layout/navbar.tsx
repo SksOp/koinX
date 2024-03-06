@@ -55,7 +55,7 @@ interface NavbarProps extends React.HTMLAttributes<HTMLDivElement> {}
 const Navbar = React.forwardRef<HTMLDivElement, NavbarProps>(
   ({ ...props }, ref) => {
     return (
-      <nav className="w-full bg-card flex justify-between items-center z-10 px-16 py-5  shadow-md">
+      <nav className="w-full bg-card flex justify-between items-center z-10 px-4 md:px-16 py-5  shadow-md">
         <a href="/">
           <Logo />
         </a>

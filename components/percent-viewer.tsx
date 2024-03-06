@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { ClassValue } from "clsx";
 import React from "react";
+import { Triangle } from "./assets/triangle";
 
 interface PercentViewerProps extends React.HTMLProps<HTMLDivElement> {
   percent: number;
@@ -41,16 +42,3 @@ const PercentViewer = React.forwardRef<HTMLDivElement, PercentViewerProps>(
 PercentViewer.displayName = "PercentViewer";
 
 export default PercentViewer;
-const Triangle = ({ className }: { className?: ClassValue }) => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="1rem"
-      height="1rem"
-      viewBox="0 0 24 24"
-      className={cn(className)}
-    >
-      <path fill="currentColor" d="M1 21h22L12 2" />
-    </svg>
-  );
-};
