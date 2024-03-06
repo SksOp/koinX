@@ -21,3 +21,12 @@ export interface Data {
     usd: number;
   };
 }
+
+export interface SimplePriceINRandUSD {
+  [key: string]: {
+    inr: number;
+    inr_24h_change: number;
+    usd: number;
+    usd_24h_change: number;
+  };
+}
