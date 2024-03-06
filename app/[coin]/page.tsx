@@ -6,6 +6,7 @@ import {
 import AdSection from "@/components/ad-section";
 import DetailsTab from "@/components/details-tab";
 import ArrowDouble from "@/components/icons/arrow-double";
+import Sentiment from "@/components/sentiment";
 import TableCard from "@/components/table-card";
 import React from "react";
 
@@ -21,6 +22,7 @@ async function page({ params }: { params: { coin: string } }) {
         <div className="md:col-span-5">
           <TableCard coin={coin} />
           <DetailsTab coin={coin} />
+          <Sentiment />
         </div>
 
         <div className="hidden md:block col-span-2">
