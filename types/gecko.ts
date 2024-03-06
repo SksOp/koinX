@@ -40,6 +40,9 @@ export interface CoinData {
     small: string;
     large: string;
   };
+  description: {
+    en: string;
+  };
   market_data: {
     current_price: {
       inr: number;

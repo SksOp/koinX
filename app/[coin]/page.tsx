@@ -3,6 +3,7 @@ import {
   getSingleSimplePrice,
   searchTranding,
 } from "@/actions/coin-geko";
+import AboutTab from "@/components/about-coin";
 import AdSection from "@/components/ad-section";
 import DetailsTab from "@/components/details-tab";
 import ArrowDouble from "@/components/icons/arrow-double";
@@ -23,6 +24,7 @@ async function page({ params }: { params: { coin: string } }) {
           <TableCard coin={coin} />
           <DetailsTab coin={coin} />
           <Sentiment />
+          <AboutTab coin={coin} />
         </div>
 
         <div className="hidden md:block col-span-2">
