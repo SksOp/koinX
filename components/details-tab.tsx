@@ -173,10 +173,24 @@ const FundamentalsChild: React.FC<Data> = ({
   additionalPercent,
 }) => {
   return (
-    <div className="flex justify-between border-b-2 pb-4 w-full">
+    <div className="flex justify-between items-center border-b-2 h-12 w-full">
       <p className="text-sm  opacity-70">{title}</p>
       <div className="flex flex-col items-end">
-        <p className="text-sm font-semibold">{value}</p>
+        <p className="text-sm font-semibold">
+          {value}
+          {additionalPercent && (
+            <span
+              className={cn(
+                "text-xs pl-2",
+                additionalPercent > 0 ? "text-green-500" : "text-red-500"
+              )}
+            >
+              {additionalPercent > 0 ? "+" : ""}
+              {additionalPercent}%
+            </span>
+          )}
+        </p>
+        {description && <p className="text-xs opacity-70">{description}</p>}
       </div>
     </div>
   );
